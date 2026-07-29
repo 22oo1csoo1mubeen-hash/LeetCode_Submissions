@@ -10,6 +10,6 @@ public:
             maxi = max(maxi,arr[i]);
         }
 
-        return temp;;
+        return temp;
     }
 };
