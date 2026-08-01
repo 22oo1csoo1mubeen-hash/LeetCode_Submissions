@@ -10,7 +10,7 @@ public:
                 if(nums[i]>nums[j])
                     count++;
             }
-            temp[i] = count;
+            temp[i]=count;
         }
 
         return temp;
