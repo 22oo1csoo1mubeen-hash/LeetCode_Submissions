@@ -1,3 +1,4 @@
+//brute force -> two loops
 class Solution {
 public:
     vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
