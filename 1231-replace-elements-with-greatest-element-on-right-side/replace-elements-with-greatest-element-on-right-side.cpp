@@ -2,14 +2,15 @@ class Solution {
 public:
     vector<int> replaceElements(vector<int>& arr) {
         int n = arr.size();
-        vector<int> temp(n);
-        int maxi = -1;
-        
-        for(int i=n-1; i>=0; i--){
-            temp[i]=maxi;
-            maxi = max(maxi,arr[i]);
+        int maxi = arr[n-1];
+        arr[n-1] = -1;
+
+        for(int i=n-2; i>=0; i--){
+            int temp = arr[i];
+            arr[i] = maxi;
+            maxi = max(maxi,temp);
         }
 
-        return temp;
+        return arr;
     }
 };
