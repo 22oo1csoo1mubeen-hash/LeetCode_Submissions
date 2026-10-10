@@ -6,6 +6,7 @@ public:
         vector<int> temp;
 
         for(int i=0; i<n-1; i++){
+            
             int cur = nums[i];
             while(cur+1 != nums[i+1]){
                 temp.push_back(cur+1);
