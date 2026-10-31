@@ -6,7 +6,7 @@ public:
         int ans = 0;
         int n = nums.size();
 
-        for (int i = 0; i < n / 2; i++) {
+        for (int i=0; i<n/2; i++) {
             ans = max(ans, nums[i] + nums[n - 1 - i]);
         }
 
