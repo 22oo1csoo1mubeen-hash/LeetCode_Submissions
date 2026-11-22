@@ -7,16 +7,16 @@ public:
 
         int ans = 0;
 
-        for (int i = 1; i < arrays.size(); i++) {
+        for (int i=1; i<arrays.size(); i++){
 
             int currMin = arrays[i][0];
             int currMax = arrays[i].back();
 
-            ans = max(ans, abs(currMax - mini));
-            ans = max(ans, abs(maxi - currMin));
+            ans = max(ans,abs(currMax - mini));
+            ans = max(ans,abs(maxi - currMin));
 
-            mini = min(mini, currMin);
-            maxi = max(maxi, currMax);
+            mini = min(mini,currMin);
+            maxi = max(maxi,currMax);
         }
 
         return ans;
